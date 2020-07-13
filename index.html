@@ -59,9 +59,11 @@
           ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
           ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
-        <p class="button">
-          <a class="button-primary" href="">Заказать услугу</a>
-        </p>
+        <span class="button" href="">
+          <button data-modal-open type="button" class="button-primary">
+            Заказать услугу
+          </button>
+        </span>
       </section>
 
       <!--Преимущества-->
@@ -373,8 +375,8 @@
     </main>
     <!--Футер-->
 
-    <footer class="footer-bg">
-      <div class="container footer">
+    <footer>
+      <div class="container footer-bg">
         <ul class="logo-footer list">
           <li class="footer-text">
             <a href="./index.html" lang="en" class="footer-logo">
@@ -433,8 +435,28 @@
               </li>
             </ul>
           </li>
+          <li class="subscribe">
+            <p class="add-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+            <form>
+              <div class="form-container">
+                <input
+                  type="email"
+                  name="customer-name"
+                  class="form-input"
+                  placeholder="E-mail"
+                />
+                <button type="submit" class="mail-item">
+                  Подписаться
+                  <svg class="icon-mail" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-plane-1"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </li>
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

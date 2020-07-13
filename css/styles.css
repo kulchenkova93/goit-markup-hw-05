@@ -147,6 +147,9 @@ color: #757575 цвет вторичного текста
   background-color: var(--accent-color);
   border-radius: 2px;
 }
+.link.current {
+  color: var(--accent-color);
+}
 
 /*site nav контакты*/
 .contact {
@@ -216,14 +219,22 @@ color: #757575 цвет вторичного текста
   margin: 0;
 }
 .button-primary {
-  display: inline-block;
+  display: inline-flex;
+
+  min-width: 200px;
+  padding: 10px 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 50px;
   background-color: var(--accent-color);
   color: var(--white-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
   text-align: center;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 /*advantages*/
@@ -306,7 +317,7 @@ color: #757575 цвет вторичного текста
 }
 .features-item {
   background-color: rgba(47, 48, 58, 0.8);
-  color: var(--white-color);
+  color: #ffffff;
   width: 370px;
   height: 70px;
   font-weight: 700;
@@ -315,12 +326,8 @@ color: #757575 цвет вторичного текста
   text-align: center;
   padding-top: 27px;
   margin-top: -70px;
-
+  text-transform: uppercase;
   position: absolute;
-}
-.features-item:hover,
-.features-item:focus {
-  color: var(--primary-text-color);
 }
 
 /*Команда*/
@@ -578,6 +585,7 @@ color: #757575 цвет вторичного текста
 }
 .logo-footer {
   display: flex;
+  margin-left: 199px;
 }
 .footer-logo {
   margin-top: 60px;
@@ -599,6 +607,7 @@ color: #757575 цвет вторичного текста
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 60px;
+  white-space: nowrap;
 }
 .adress {
   background-color: #2f303a;
@@ -686,4 +695,45 @@ color: #757575 цвет вторичного текста
 .add .footer-links:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
+}
+
+.subscribe {
+  margin-top: 72px;
+  margin-left: 94px;
+}
+.form-input {
+  width: 358px;
+  height: 50px;
+  left: 814px;
+  top: 1736px;
+  padding-left: 16px;
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.mail-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.icon-mail {
+  margin-left: 10px;
 }
