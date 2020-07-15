@@ -333,12 +333,9 @@ color: #757575 цвет вторичного текста
 /*Команда*/
 .team {
   margin-top: 94px;
-}
-.bg {
-  width: 1600px;
-
   background: #f5f4fa;
 }
+
 .team-features {
   display: flex;
   justify-content: center;
@@ -578,14 +575,12 @@ color: #757575 цвет вторичного текста
 }
 /*Footer*/
 .footer-bg {
-  width: 1600px;
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
 }
 .logo-footer {
   display: flex;
-  margin-left: 199px;
 }
 .footer-logo {
   margin-top: 60px;
